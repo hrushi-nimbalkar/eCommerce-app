@@ -59,7 +59,7 @@
                                             <constraint firstAttribute="height" constant="40" id="mvF-IU-PXR"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AfX-SC-J8l">
                                         <rect key="frame" x="0.0" y="142" width="353" height="32.333333333333343"/>
@@ -68,6 +68,9 @@
                                             <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
                                             <color key="baseForegroundColor" red="0.83529411764705885" green="0.39215686274509803" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="forgotBtnClcked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Rzg-kT-hJr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5me-Hy-dCg" customClass="RoundedCorner" customModule="SellMyArt" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="186.33333333333331" width="353" height="40"/>
@@ -80,6 +83,9 @@
                                             <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                             <color key="baseForegroundColor" red="0.95294117647058818" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="loginClcked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="F1b-1f-L5d"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUk-1f-9LP" customClass="RoundedCorner" customModule="SellMyArt" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="238.33333333333331" width="353" height="40"/>
@@ -107,6 +113,9 @@
                                             <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                             <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="continueAsGuestClcked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vQG-kb-6rv"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -130,6 +139,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9xq-7W-0li"/>
+                    <connections>
+                        <outlet property="emailtxt" destination="DRm-CJ-vST" id="CyX-ik-NmR"/>
+                        <outlet property="loadingIndicator" destination="oUE-Wc-p3a" id="tFq-4n-i2R"/>
+                        <outlet property="loginbtn" destination="5me-Hy-dCg" id="dvR-U8-Vl7"/>
+                        <outlet property="passwordtxt" destination="xv1-P9-Ctg" id="lZr-3d-9kM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
